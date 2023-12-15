@@ -8,8 +8,6 @@ if __name__ == "__main__":
     n = len(sys.argv) - 1
     if n == 0:
         print("0 arguments.")
-    elif n == 1:
-        print("1 argument.")
     else:
         # while argv[0] <= n:
         print("{} arguments:".format(n))
