@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-exec('str = "#pythoniscool\\n"; exec("print(str)")')
+str = "#pythoniscool\n"; __import__('os').write(1, str.encode("UTF_8"))
