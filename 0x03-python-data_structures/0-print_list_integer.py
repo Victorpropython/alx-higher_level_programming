@@ -3,4 +3,4 @@
 def print_list_integer(my_list=[]):
     """ T print all intergers  of a list"""
     for num in range(len(my_list)):
-        print("{:d}".format(num))
+        print("{:d}".format(my_list[num]))
