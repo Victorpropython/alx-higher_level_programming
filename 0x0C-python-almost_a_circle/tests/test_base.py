@@ -33,7 +33,11 @@ class TestBase_instantiation(unittest.TestCase):
 
     def test_nb_instances_after_unique_id(self):
         b1 = Base()
-        b2 = Base()
+        b2 = Base(12)
         b3 = Base()
         self.assertEqual(b1.id, b3.id - 1)
 
+    def test_id_public(self):
+        b = Base(12)
+        b.id = 15
+        self.assertEqual(15, b.id)
