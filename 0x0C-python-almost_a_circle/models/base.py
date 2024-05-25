@@ -9,8 +9,8 @@ class Base:
         
         This class will manage the id attribute to avoid code duplication
 
-        Private Class Attribute:
-            __nb_object(int): instances of the base class
+     Private Class Attribute:
+        __nb_object(int): instances of the base class
 
     """
     __nb_objects = 0
@@ -21,6 +21,7 @@ class Base:
         Args:
             id (int): The id of the new instance. if not provided,
                       the id will be automatically assigned.
+
         """
         if id is not None:
             self.id = id
