@@ -6,7 +6,7 @@ TestBase_instantiation - line
 """
 import os
 import unittest
-from models.base import base
+from models.base import Base
 
 
 class TestBase_instantiation(unittest.TestCase):
