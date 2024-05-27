@@ -12,10 +12,26 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """Square Representation"""
+    """Square Representation
+
+    for all the task to be done
+    having a square that inherits the property of
+    a rectangle and assigning the width and height
+    to size as the attribute
+
+"""
 
     def __init__(self, size, x=0, y=0, id=None):
-        """For the Args Above """
+        """For the Args Above
+
+        Args:
+            the arguments includes
+            size = which is an int
+            x = Also an int and for the x coordinate
+            y = Also an int and for the y coordinate
+            id Which represent the instance of the the class
+
+        """
         super().__init__(size, size, x, y, id)
 
     @property
@@ -36,11 +52,9 @@ class Square(Rectangle):
     def size(self, value):
         self.height = value
 
-    def __str__(self):
-        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
-
     def update(self, *args, **kwargs):
-        """Update the Rectangle.
+        """Update the Rectangle
+
         Args:
             *args (ints): New attributes values (id, width, height, x, y)
             **kwargs (dict): New dct of attributes
@@ -75,9 +89,14 @@ class Square(Rectangle):
                     self.y = j
 
     def to_dictionary(self):
+        """Method to return square dictionary representation """
         return {
                 "id": self.id,
                 "size": self.size,
                 "x": self.x,
                 "y": self.y
                 }
+
+    def __str__(self):
+        """ use to print out the string in a good format"""
+        return f"[Square]({self.id}){self.x}/{self.y} - {self.size}
